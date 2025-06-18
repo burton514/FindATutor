@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Trang chủ"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/teal_700"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Hồ sơ"
+            android:icon="@drawable/ic_person"
+            android:iconTint="@color/teal_700"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Cài đặt"
+            android:icon="@drawable/ic_settings"
+            android:iconTint="@color/teal_700"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_logOut"
+            android:title="Thoát"
+            android:icon="@drawable/ic_exit"
+            android:iconTint="@color/teal_700"/>
+    </group>
+</menu>

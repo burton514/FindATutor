@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- Ảnh đại diện sử dụng CircleImageView -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_itemchat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_user"
+        android:layout_marginEnd="12dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/darker_gray"/>
+
+    <!-- Layout chứa tên và tin nhắn -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/txt_username_itemchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Tên người dùng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <!-- Tin nhắn cuối cùng -->
+        <TextView
+            android:id="@+id/txt_message_itemchat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tin nhắn cuối cùng..."
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:textColor="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/tv_timestamp_itemchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30 PM"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- ScrollView để cuộn tiêu đề và thanh nhập tin nhắn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Tiêu đề hiển thị tên người bạn đang chat -->
+            <TextView
+                android:id="@+id/tv_chat_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat với..."
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- RecyclerView để hiển thị tin nhắn (không nên bọc trong ScrollView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"/>
+
+    <!-- ScrollView chỉ bọc phần nhập tin nhắn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Nhập tin nhắn..."
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_send"
+                android:contentDescription="Send message"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

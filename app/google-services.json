@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934652271861",
+    "project_id": "manager-afed2",
+    "storage_bucket": "manager-afed2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934652271861:android:2929b29dba913bdff979bc",
+        "android_client_info": {
+          "package_name": "com.example.goodsmanagementapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYvAeWSu5ZT-krdxKaHjHNku4yBiaXSvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

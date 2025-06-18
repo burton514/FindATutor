@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#00796B</color> <!-- Thêm màu teal_700 -->
+    <color name="purple_500">#9C27B0</color> <!-- Màu tím -->
+    <color name="purple_700">#7B1FA2</color>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomButtons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Ảnh đại diện -->
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/custom_imageview"
+                    android:src="@drawable/ic_user"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Họ và tên -->
+                    <TextView
+                        android:id="@+id/txtFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_textview"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Họ và tên" />
+
+                    <!-- Ngày sinh -->
+                    <TextView
+                        android:id="@+id/txtDateOfBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_textview"
+                        android:text="Ngày sinh" />
+
+                    <!-- Quê quán -->
+                    <TextView
+                        android:id="@+id/txtHomeTown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_textview"
+                        android:text="Quê quán" />
+
+                    <!-- Địa chỉ hiện tại -->
+                    <TextView
+                        android:id="@+id/txtCurrentAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_textview"
+                        android:text="Địa chỉ hiện tại" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Kinh nghiệm làm việc -->
+            <TextView
+                android:id="@+id/txtWorkExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="Kinh nghiệm làm việc"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txtWorkExperienceValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="(Chưa có dữ liệu)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <!-- Thành tựu -->
+            <TextView
+                android:id="@+id/txtAchievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="Thành tựu"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txtAchievementsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="(Chưa có dữ liệu)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <!-- Giới thiệu bản thân -->
+            <TextView
+                android:id="@+id/txtSelfIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="Giới thiệu bản thân"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txtSelfIntroductionValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="(Chưa có dữ liệu)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <!-- Tags -->
+            <TextView
+                android:id="@+id/txtTagLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="Tags"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txtTagList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="(Chưa có tags)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Nút Chat và Add Friend -->
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnFollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="Theo dõi" />
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="CHAT"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

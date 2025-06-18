@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="THÔNG TIN"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:background="@drawable/custom_textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <!-- Ảnh đại diện -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user"
+                android:layout_marginBottom="12dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Họ và tên -->
+                <EditText
+                    android:id="@+id/edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Họ và tên"
+                    android:textSize="18sp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"/>
+
+                <!-- Ngày sinh -->
+                <EditText
+                    android:id="@+id/edtDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Ngày sinh"
+                    android:inputType="date"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"/>
+
+                <!-- Quê quán -->
+                <EditText
+                    android:id="@+id/edtHomeTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Quê quán"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"/>
+
+                <!-- Địa chỉ hiện tại -->
+                <EditText
+                    android:id="@+id/edtCurrentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Địa chỉ hiện tại"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Kinh nghiệm làm việc -->
+        <EditText
+            android:id="@+id/edtWorkExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Kinh nghiệm làm việc"
+            android:inputType="textMultiLine"
+            android:background="@drawable/custom_edittext"
+            android:padding="12dp"/>
+
+        <!-- Thành tựu -->
+        <EditText
+            android:id="@+id/edtAchievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Thành tựu"
+            android:inputType="textMultiLine"
+            android:background="@drawable/custom_edittext"
+            android:padding="12dp"/>
+
+        <!-- Giới thiệu bản thân -->
+        <EditText
+            android:id="@+id/edtSelfIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:hint="Giới thiệu bản thân"
+            android:inputType="textMultiLine"
+            android:background="@drawable/custom_edittext"
+            android:padding="12dp"/>
+
+        <!-- Chọn Tags -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn Tags"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_textview"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="8dp">
+
+            <!-- Lớp học -->
+            <CheckBox android:id="@+id/tag_lop1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 1"  android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 2" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 3" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 4" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 5" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 6" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 7" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 8" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 9" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 10" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 11" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_lop12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp 12" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+
+            <!-- Môn học -->
+            <CheckBox android:id="@+id/tag_toan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Môn Toán" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_van" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Môn Văn" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+            <CheckBox android:id="@+id/tag_tienganh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Môn Tiếng Anh" android:minHeight="48dp" android:background="@drawable/custom_checkbox"/>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnUpDateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btnDeleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
